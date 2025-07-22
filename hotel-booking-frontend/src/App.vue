@@ -1,11 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <Bookings/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
-<script setup>
-import Bookings from "./components/Bookings.vue"
+<script>
+export default {
+  name: 'App'
+}
 </script>
