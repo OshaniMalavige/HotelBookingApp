@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar flat color="white" class="py-4 px-6 shadow-sm" height="80">
+  <v-app-bar flat class="py-4 px-6 shadow-sm bg-grey-lighten-3" height="80">
     <!-- Brand -->
     <div class="text-amber-darken-3 font-weight-bold text-h6 leading-tight">
       <div>Softura</div>
@@ -11,14 +11,15 @@
     <!-- Desktop Nav -->
     <nav class="d-none d-md-flex gap-6 align-center">
       <v-btn
-          v-for="(item, index) in navItems"
-          :key="item"
-          text
+          v-for="item in navItems"
+          :key="item.name"
           class="font-weight-bold text-capitalize"
-          :class="index === 0 ? 'text-amber-darken-3' : 'text-black'"
-          href="#"
+          :class="activeTab === item.name ? 'text-amber-darken-4' : 'text-black'"
+          :to="item.to"
+          @click="activeTab = item.name"
+          router
       >
-        {{ item }}
+        {{ item.name }}
       </v-btn>
     </nav>
 
@@ -30,7 +31,17 @@
 </template>
 
 <script setup>
-const navItems = ['Home', 'Rooms', 'Services', 'Events', 'Contact Us']
+import { ref } from 'vue'
+
+const navItems = [
+  { name: 'Home', to: '/' },
+  { name: 'Rooms', to: '/rooms' },
+  { name: 'Services', to: '/services' },
+  { name: 'Events', to: '/events' },
+  { name: 'Contact Us', to: '/contact' },
+]
+
+const activeTab = ref('Home')
 </script>
 
 <style scoped>

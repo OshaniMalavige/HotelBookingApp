@@ -1,12 +1,10 @@
 <template>
-  <v-app>
-    <v-main>
       <v-container fluid class="pa-8">
-        <v-row class="my-16">
+        <v-row class="my-8">
           <v-col cols="12">
             <!-- Section Header -->
-            <div class="text-center mb-12">
-              <h2 class="amenities-title display-1 mb-4">Amenities & Services</h2>
+            <div class="text-center mb-8">
+              <h1 class="amenities-title display-1 mb-4">Amenities & Services</h1>
               <div class="amenities-description mx-auto">
                 <p class="about-text text-center">
                   Indulge in exquisite dining at our restaurant, offering a diverse menu of local and international flavors. Rejuvenate at our spa & wellness center, where relaxation meets luxury with tailored treatments. Host unforgettable celebrations, meetings, and events in our elegant venues, while staying active in our modern fitness center or unwinding by our serene pool.
@@ -30,8 +28,6 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-main>
-  </v-app>
 </template>
 
 <script>
@@ -86,12 +82,12 @@ export default {
   display: block;
   width: 80px;
   height: 3px;
-  background: #B8860B;
+  background: #FFA000;
   margin: 10px auto 0 auto;
 }
 
 .amenities-description {
-  max-width: 800px;
+  max-width: 1024px;
 }
 
 /* Service Cards Styles */

@@ -1,10 +1,10 @@
 <template>
       <v-container fluid class="pa-8">
-        <v-row class="my-16">
+        <v-row class="my-8">
           <v-col cols="12">
             <!-- Section Header -->
             <div class="text-center mb-16">
-              <h2 class="rooms-title display-1 mb-6">Our Rooms</h2>
+              <h1 class="rooms-title display-1 mb-6">Our Rooms</h1>
               <div class="rooms-description mx-auto">
                 <p class="description-text">
                   When you host a party or family reunion, the special celebrations lot you strong then bonds with
@@ -49,18 +49,33 @@ export default {
       rooms: [
         {
           type: 'LUXURY ROOM',
-          price: '$320/ PER NIGHT',
-          image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+          price: 'LKR 180000/ PER NIGHT',
+          image: '/images/lux.jpg'
         },
         {
           type: 'DOUBLE ROOM',
-          price: '$320/ PER NIGHT',
-          image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+          price: 'LKR 100000/ PER NIGHT',
+          image: '/images/double.jpg'
         },
         {
           type: 'FAMILY ROOM',
-          price: '$320/ PER NIGHT',
-          image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+          price: 'LKR 150000/ PER NIGHT',
+          image: '/images/family.jpg'
+        },
+        {
+          type: 'DELUXE ROOM',
+          price: 'LKR 130000/ PER NIGHT',
+          image: '/images/deluxe.jpg'
+        },
+        {
+          type: 'SINGLE ROOM',
+          price: 'LKR 80000/ PER NIGHT',
+          image: '/images/single.jpg'
+        },
+        {
+          type: 'PRESIDENTIAL ROOM',
+          price: 'LKR 250000/ PER NIGHT',
+          image: '/images/president.jpeg'
         }
       ]
     }
@@ -82,28 +97,26 @@ export default {
   color: #333;
   margin-bottom: 20px;
   position: relative;
-  font-size: 3.5rem;
 }
 
 .rooms-title::after {
   content: '';
   display: block;
-  width: 120px;
-  height: 3px;
-  background: #B8860B;
-  margin: 20px auto 0 auto;
+  width: 80px;
+  height: 4px;
+  background: #FFA000;
+  margin: 10px auto 0 auto;
 }
 
 .rooms-description {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .description-text {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
   font-family: 'Arial', sans-serif;
-  margin: 0;
 }
 
 /* Room Cards Styles */
@@ -175,7 +188,7 @@ export default {
 .room-price {
   font-family: 'Georgia', serif;
   font-size: 1.2rem;
-  color: #B8860B;
+  color: #FFA000;
   margin: 0;
   font-weight: 400;
 }

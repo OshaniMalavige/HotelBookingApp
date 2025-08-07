@@ -22,13 +22,13 @@
           <v-col cols="12" md="6">
             <div class="image-grid">
               <div class="grid-item grid-item-1">
-                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beach umbrella and blue sky">
+                <img src="/images/NilaveliBeachHotel.jpg" alt="Beach umbrella and blue sky">
               </div>
               <div class="grid-item grid-item-2">
-                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Surfer riding a wave">
+                <img src="/images/surf.jpg" alt="Surfer riding a wave">
               </div>
               <div class="grid-item grid-item-3">
-                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Spa treatment with tropical flowers">
+                <img src="/images/spa.png" alt="Spa treatment with tropical flowers">
               </div>
             </div>
           </v-col>
@@ -53,7 +53,7 @@
   display: block;
   width: 80px;
   height: 3px;
-  background: #B8860B;
+  background: #FFA000;
   margin-top: 10px;
 }
 

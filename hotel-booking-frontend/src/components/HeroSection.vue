@@ -30,12 +30,12 @@
 
       <!-- Booking Form Card (bottom of video) -->
       <v-card
-          class="booking-form-card bg-white mx-auto shadow-lg rounded-sm"
+          class="booking-form-card bg-grey-lighten-5 mx-auto shadow-lg rounded-sm"
       >
         <v-container class="pa-6">
           <v-row>
             <v-col cols="12" md="2">
-              <v-label class="text-amber-darken-3 font-weight-medium mb-2">
+              <v-label class="text-amber-darken-4 font-weight-medium mb-2">
                 Check In
               </v-label>
               <v-text-field
@@ -46,7 +46,7 @@
             </v-col>
 
             <v-col cols="12" md="2">
-              <v-label class="text-amber-darken-3 font-weight-medium mb-2">
+              <v-label class="text-amber-darken-4 font-weight-medium mb-2">
                 Check Out
               </v-label>
               <v-text-field
@@ -57,7 +57,7 @@
             </v-col>
 
             <v-col cols="12" md="2">
-              <v-label class="text-amber-darken-3 font-weight-medium mb-2">
+              <v-label class="text-amber-darken-4 font-weight-medium mb-2">
                 Guests
               </v-label>
               <v-text-field
@@ -69,11 +69,11 @@
             </v-col>
 
             <v-col cols="12" md="2">
-              <v-label class="text-amber-darken-3 font-weight-medium mb-2">
+              <v-label class="text-amber-darken-4 font-weight-medium mb-2">
                 Room Type
               </v-label>
               <v-select
-                  :items="['Any Room', 'Luxury Room', 'Double Room', 'Family Room']"
+                  :items="['Luxury Room', 'Double Room', 'Family Room', 'Deluxe Room', 'Single Room', 'Presidential Room']"
                   variant="outlined"
                   density="compact"
               ></v-select>
@@ -84,6 +84,7 @@
                   block
                   color="amber-darken-3"
                   class="text-white mt-8"
+                  to="/bookings"
               >
                 Book Now
               </v-btn>
