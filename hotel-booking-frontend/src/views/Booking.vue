@@ -6,37 +6,8 @@
         <div class="hero-section">
           <v-container>
             <v-row justify="center">
-              <v-col cols="12" md="8" lg="6">
-                <v-card class="booking-card" elevation="8">
-                  <!-- Header Images -->
-                  <div class="header-images">
-                    <v-row no-gutters>
-                      <v-col cols="4">
-                        <v-img
-                            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=300&h=200&fit=crop"
-                            height="120"
-                            cover
-                            class="rounded-tl-lg"
-                        ></v-img>
-                      </v-col>
-                      <v-col cols="4">
-                        <v-img
-                            src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=300&h=200&fit=crop"
-                            height="120"
-                            cover
-                        ></v-img>
-                      </v-col>
-                      <v-col cols="4">
-                        <v-img
-                            src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=300&h=200&fit=crop"
-                            height="120"
-                            cover
-                            class="rounded-tr-lg"
-                        ></v-img>
-                      </v-col>
-                    </v-row>
-                  </div>
-
+              <v-col cols="12" md="8" lg="8">
+                <v-card class="booking-card bg-grey-lighten-3" elevation="8">
                   <v-card-text class="pa-8">
                     <!-- Title -->
                     <div class="text-center mb-6">
@@ -404,29 +375,13 @@ export default {
 
 <style scoped>
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: white;
   min-height: 100vh;
   padding: 40px 0;
 }
 
 .booking-card {
-  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 16px !important;
-}
-
-.header-images {
-  border-radius: 16px 16px 0 0;
-  overflow: hidden;
-}
-
-.v-card-text {
-  background: white;
-  border-radius: 0 0 16px 16px;
-}
-
-.v-btn {
-  text-transform: none !important;
-  font-weight: 600;
 }
 </style>
